@@ -1,8 +1,8 @@
 window.addEventListener('load', () => {
-    const $ = (id) => document.getElementById(id);
+    const $ = id => document.getElementById(id);
     let form = $('empForm');
     let id, name, ext, email, department;
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', e => {
         e.preventDefault();
         id = $('id').value;
         name = $('name').value;
